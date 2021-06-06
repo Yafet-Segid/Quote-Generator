@@ -6,8 +6,7 @@
 
 body {
   height: 100vh;
-  background: url(image.jpg);
-
+  background: url(image/loft.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -20,7 +19,7 @@ body {
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: 40px;
+  font-size: 50px;
 }
 
 .frame {
@@ -69,11 +68,39 @@ body {
   font-size: 50px;
 }
 
-/* #bg {
-  position: fixed;
-  top: 0;
-  left: 0;
+@media (max-width: 420px) {
+  body {
+    background: url(image/port.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
 
-  min-width: 100%;
-  min-height: 100%;
-} */
+  .frame {
+    border: 2px solid;
+    padding: 10px;
+    width: 350px;
+    resize: vertical;
+    overflow: auto;
+  }
+  .header {
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 45px;
+  }
+
+  .frame-btn {
+    margin-top: 48vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #main {
+    padding: 20px;
+    font-size: 35px;
+  }
+}
