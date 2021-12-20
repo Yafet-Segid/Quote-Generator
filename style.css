@@ -6,7 +6,7 @@
 
 body {
   height: 100vh;
-  background: url(image.jpg);
+  /* background: url(image.jpg); */
 
   background-size: cover;
   background-position: center;
@@ -15,12 +15,12 @@ body {
 }
 
 .header {
-  margin-top: 17vh;
+  margin-top: 2em;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  font-size: 40px;
+  color: black;
+  font-size: 50px;
 }
 
 .frame {
@@ -34,8 +34,9 @@ body {
   bottom: 22%;
   left: 0%;
   right: 0%;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0 0 12px 12px #1f1f1f;
+  border: 1px solid transparent;
+  box-shadow: 0 0 35px #999;
+  border-radius: 30px;
   opacity: 0.9;
   color: black;
 }
@@ -49,15 +50,18 @@ body {
 
 #btn {
   border-radius: 25px;
-  padding-top: 10px;
-  padding-bottom: 13px;
-  padding-right: 75px;
-  padding-left: 59px;
+  padding-top: 7px;
+  padding-bottom: 9px;
+  padding-right: 50px;
+  padding-left: 50px;
+  margin-top: 5em;
   cursor: pointer;
   color: white;
   background-size: 200%;
   transition: 0.6s;
-  background-image: linear-gradient(to left, #12cbc4, #0652dd, #12cbc4);
+  /* background-image: linear-gradient(to left, #12cbc4, #0652dd, #12cbc4); */
+  background-color: rgb(48, 48, 48);
+  font-size: 20px;
 }
 
 .frame-btn :hover {
@@ -67,13 +71,20 @@ body {
 #main {
   padding: 30px;
   font-size: 50px;
+  /* overflow: scroll; */
 }
 
-/* #bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-
-  min-width: 100%;
-  min-height: 100%;
-} */
+@media screen and (max-width: 665px) {
+  .frame {
+    margin-top: 11em;
+    width: 22em;
+    height: 16em;
+  }
+  #main {
+    font-size: 35px;
+  }
+  .header {
+    margin-top: 2em;
+    font-size: 40px;
+  }
+}
